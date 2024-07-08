@@ -28,7 +28,7 @@ class CommonButton extends StatelessWidget {
     } else if (isActive == false && isDisabled == false) {
       return Colors.white;
     } else {
-      return buttonInActiveColor ?? Colors.teal.shade100;
+      return buttonInActiveColor ?? Colors.deepPurpleAccent.shade600;
     }
   }
 
@@ -36,7 +36,7 @@ class CommonButton extends StatelessWidget {
     if (isActive == true && isDisabled == false) {
       return Colors.white;
     } else if (isActive == false && isDisabled == false) {
-      return buttonActiveColor ?? Colors.teal;
+      return buttonActiveColor ?? Colors.deepPurpleAccent.shade100;
     } else {
       return Colors.white;
     }
@@ -54,7 +54,7 @@ class CommonButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: _getButtonColor(),
           borderRadius: const BorderRadius.all(Radius.circular(6)),
-          border: (isActive == false && isDisabled == false) ? Border.all(color: Colors.teal, width: 2) : null,
+          border: (isActive == false && isDisabled == false) ? Border.all(color: Colors.deepPurpleAccent, width: 2) : null,
         ),
         child: Text(
           text,

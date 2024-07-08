@@ -29,15 +29,15 @@ class BookingSlot extends StatelessWidget {
 
   Color getSlotColor() {
     if (isPauseTime) {
-      return pauseSlotColor ?? Colors.grey;
+      return pauseSlotColor ?? Colors.grey.shade300;
     }
 
     if (isBooked) {
       return bookedSlotColor ?? Colors.redAccent;
     } else {
       return isSelected
-          ? selectedSlotColor ?? Colors.orangeAccent
-          : availableSlotColor ?? Colors.greenAccent;
+          ? selectedSlotColor ?? Colors.deepPurpleAccent.shade400
+          : availableSlotColor ?? Colors.deepPurpleAccent.shade100;
     }
   }
 
