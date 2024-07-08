@@ -28,7 +28,7 @@ class CommonButton extends StatelessWidget {
     } else if (isActive == false && isDisabled == false) {
       return Colors.white;
     } else {
-      return buttonInActiveColor ?? Colors.deepPurpleAccent.shade600;
+      return buttonInActiveColor ?? Colors.deepPurpleAccent.shade100;
     }
   }
 
