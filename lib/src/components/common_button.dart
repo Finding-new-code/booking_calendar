@@ -24,11 +24,11 @@ class CommonButton extends StatelessWidget {
 
   Color _getButtonColor() {
     if (isActive == true && isDisabled == false) {
-      return buttonActiveColor ?? Colors.teal;
+      return buttonActiveColor ?? Colors.deepPurpleAccent.shade100;
     } else if (isActive == false && isDisabled == false) {
       return Colors.white;
     } else {
-      return buttonInActiveColor ?? Colors.deepPurpleAccent.shade100;
+      return buttonInActiveColor ?? const Color.fromARGB(255, 156, 132, 199);
     }
   }
 

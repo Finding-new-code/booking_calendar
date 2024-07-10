@@ -36,7 +36,7 @@ class BookingSlot extends StatelessWidget {
       return bookedSlotColor ?? Colors.redAccent;
     } else {
       return isSelected
-          ? selectedSlotColor ?? Colors.deepPurpleAccent.shade400
+          ? selectedSlotColor ?? const Color.fromARGB(255, 124, 90, 216)
           : availableSlotColor ?? Colors.deepPurpleAccent.shade100;
     }
   }
